@@ -76,7 +76,7 @@ if (currentTask == 'dev') {
 }
 
 if (currentTask == 'build') {
-  // config.module.rules.push(jsConfig);
+  config.module.rules.push(jsConfig);
   cssConfig.use.unshift(MiniCssExtractPlugin.loader);
   postCSSPlugins.push(require('cssnano'));
   config.output = {
